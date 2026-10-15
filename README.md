@@ -106,9 +106,7 @@ The data is fully anonymous and can be disabled with one line in `plugins/bStats
 
 ## 📄 License
 
-[GNU General Public License v3.0](LICENSE). Source code: `https://github.com/Bananosme/1v1RtpDuel`
-
-Bundled third-party code: bStats Metrics (MIT) — see [THIRD-PARTY.md](THIRD-PARTY.md).
+[GNU General Public License v3.0](LICENSE).
 
 ---
 
@@ -223,8 +221,6 @@ rtp:
 
 ## 📄 Лицензия
 
-[GNU General Public License v3.0](LICENSE). Исходный код: `https://github.com/Bananosme/1v1RtpDuel`
-
-Сторонний код внутри плагина: bStats Metrics (MIT) — см. [THIRD-PARTY.md](THIRD-PARTY.md).
+[GNU General Public License v3.0](LICENSE).
 
 </details>
