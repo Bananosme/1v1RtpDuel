@@ -5,6 +5,9 @@ dependency-reduced-pom.xml
 # Локальный Maven (не нужен в репозитории)
 tools/
 
+# Графика (генерируется скриптами в assets/ локально, в репозиторий не нужна)
+assets/
+
 # IDE
 .idea/
 *.iml
