@@ -1,0 +1,77 @@
+# ============================================================
+#  1v1RtpDuel — конфигурация
+# ============================================================
+
+# Значения по умолчанию для миров
+default-border: 10000
+default-spawn-distance: 8
+
+# Миры для дуэлей: при старте матча случайно выбирается один из списка.
+# border — границы рандомных координат спавна (± блоков по X и Z)
+# spawn-distance — расстояние между игроками при спавне
+worlds:
+  world_1v1:
+    border: 10000
+    spawn-distance: 8
+  world_1v1_2:
+    border: 5000
+    spawn-distance: 12
+
+# Мир спавна: сюда возрождаются игроки, умершие на арене
+spawn-world: "world"
+
+# Босбар очереди (цвет/стиль: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE / SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20)
+bossbar-color: GREEN
+bossbar-style: SOLID
+
+# ============================================================
+#  /rtp — случайная телепортация с GUI выбора мира
+#  size — размер GUI (кратно 9, от 9 до 54)
+#  worlds — миры в GUI: slot (необязателен, ставится автоматически),
+#  material, name и lore кастомизируются.
+#  Если worlds пуст — в GUI попадут все миры из секции worlds.
+# ============================================================
+rtp:
+  gui:
+    title: "<green>Выбор мира для RTP"
+    size: 27
+    filler:
+      enabled: true
+      material: GRAY_STAINED_GLASS_PANE
+      name: " "
+    worlds:
+      world:
+        slot: 11
+        material: GRASS_BLOCK
+        name: "<green>Обычный мир"
+        lore:
+          - "<gray>Кликните, чтобы телепортироваться"
+      world_1v1:
+        slot: 13
+        material: NETHERITE_SWORD
+        name: "<red>Арена 1v1"
+        lore:
+          - "<gray>Кликните, чтобы телепортироваться"
+          - "<red>Опасно!"
+
+# ============================================================
+#  Сообщения. Форматирование: MiniMessage (<green>, <bold>, <#ff0000>)
+#  или легаси-коды (&a&l, &#RRGGBB). Литеральный & пишется как &&.
+#  Плейсхолдеры: {position}, {opponent}, {worlds}, {permission}, {world}, {x}, {y}, {z}
+# ============================================================
+messages:
+  console-only: "<red>Команда доступна только игрокам."
+  no-permission: "<red>У вас нет прав {permission}."
+  in-queue: "<green>Вы вошли в очередь 1v1! Ваша позиция: <yellow>{position}"
+  already-in-queue: "<red>Вы уже в очереди 1v1."
+  left-queue: "<yellow>Вы вышли из очереди 1v1."
+  not-in-queue: "<yellow>Вы не состоите в очереди 1v1."
+  no-worlds: "<red>Ни один из миров 1v1 не загружен: <yellow>{worlds}<red>."
+  found: "<green><bold>Соперник найден: <yellow>{opponent}<green>!"
+  arena-not-found: "<red>Не удалось найти место для арены. Попробуйте ещё раз."
+  title-go: "<green><bold>ПОЁХАЛИ!"
+  bossbar-queue: "<yellow>Вы в очереди 1v1. Позиция: {position}"
+  rtp-no-worlds: "<red>Нет доступных миров для RTP."
+  rtp-world-unavailable: "<red>Мир <yellow>{world} <red>недоступен."
+  rtp-not-found: "<red>Не удалось найти место для телепортации. Попробуйте ещё раз."
+  rtp-teleported: "<green>Вы телепортированы в точку <yellow>{x}, {y}, {z}<green>."

@@ -1,0 +1,19 @@
+# Сборка
+target/
+dependency-reduced-pom.xml
+
+# Локальный Maven (не нужен в репозитории)
+tools/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+
+# Прочее
+*.log

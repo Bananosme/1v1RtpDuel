@@ -1,0 +1,10 @@
+# Normalize line endings: LF inside the repository, CRLF only for Windows scripts
+* text=auto eol=lf
+
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+*.png binary
+*.jpg binary
+*.jar binary
+*.class binary
