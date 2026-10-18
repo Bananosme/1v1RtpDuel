@@ -68,7 +68,7 @@ bossbar-style: SOLID         # SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, S
 ```yaml
 rtp:
   gui:
-    title: "<green>Pick a world for RTP"
+    title: "<green>Select a world for RTP"
     size: 27
     worlds:
       world:
@@ -155,6 +155,9 @@ The data is fully anonymous and can be disabled with one line in `plugins/bStats
 ---
 
 ## ⚙️ Конфиг (главное)
+
+> 💡 Сам плагин поставляется с английскими значениями и сообщениями.
+> В примерах ниже — русская локализация (`messages` и меню `/rtp`).
 
 ```yaml
 # Значения по умолчанию для миров
