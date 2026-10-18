@@ -3,29 +3,29 @@ version: 1.0.0
 main: me.bananosme.rtpduel.RtpDuelPlugin
 api-version: '1.21'
 author: Bananosme_Play
-description: Очередь дуэлей 1v1 со случайными мирами и кастомными границами спавна
+description: 1v1 duel queue with random arenas across multiple worlds
 
 commands:
   1v1:
-    description: Встать в очередь на дуэль 1v1
+    description: Join the 1v1 duel queue
     usage: /1v1
     aliases: [duel]
     permission: rtpduel.1v1
   1v1_leave:
-    description: Выйти из очереди на дуэль 1v1
+    description: Leave the 1v1 duel queue
     usage: /1v1_leave
     aliases: [leave1v1, duel_leave]
     permission: rtpduel.1v1
   rtp:
-    description: Телепортация в случайную точку выбранного мира
+    description: Teleport to a random spot in the selected world
     usage: /rtp
     aliases: [randomtp]
     permission: rtpduel.rtp
 
 permissions:
   rtpduel.1v1:
-    description: Доступ к командам /1v1 и /1v1_leave
+    description: Access to /1v1 and /1v1_leave
     default: true
   rtpduel.rtp:
-    description: Доступ к команде /rtp
+    description: Access to /rtp
     default: true

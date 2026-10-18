@@ -51,7 +51,7 @@ public final class RtpDuelPlugin extends JavaPlugin {
         metrics = new Metrics(this, BSTATS_PLUGIN_ID);
         metrics.addCustomChart(new Metrics.SimplePie("arena_worlds", this::arenaWorldsChart));
 
-        getLogger().info("1v1RtpDuel включен. Автор: Bananosme_Play");
+        getLogger().info("1v1RtpDuel enabled.");
     }
 
     @Override
@@ -61,7 +61,7 @@ public final class RtpDuelPlugin extends JavaPlugin {
         if (metrics != null) {
             metrics.shutdown();
         }
-        getLogger().info("1v1RtpDuel выключен.");
+        getLogger().info("1v1RtpDuel disabled.");
     }
 
     /**

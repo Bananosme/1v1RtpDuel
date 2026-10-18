@@ -49,7 +49,7 @@ public final class RtpManager implements Listener {
     public void openGui(Player player) {
         TextManager lang = plugin.getTextManager();
         Inventory inventory = Bukkit.createInventory(null, guiSize(),
-                lang.parse(plugin.getConfig().getString("rtp.gui.title", "<green>Выбор мира для RTP")));
+                lang.parse(plugin.getConfig().getString("rtp.gui.title", "<green>Select a world for RTP")));
 
         Map<Integer, String> slots = new LinkedHashMap<>();
         for (String name : worldNames()) {
